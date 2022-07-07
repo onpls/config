@@ -1,0 +1,11 @@
+/*
+
+!.gitignore
+!.zshrc
+!.Xresources
+
+!.i3/
+
+!.config/
+.config/*
+!.config/nvim/
