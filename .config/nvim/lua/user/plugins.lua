@@ -48,8 +48,8 @@ return packer.startup(function(use)
   use "akinsho/bufferline.nvim"
   use "moll/vim-bbye"
   use "akinsho/toggleterm.nvim"
-  use "lewis6991/gitsigns.nvim" 
-  use "numToStr/Comment.nvim" 
+  use "lewis6991/gitsigns.nvim"
+  use "numToStr/Comment.nvim"
   use "Pocco81/AutoSave.nvim"
   use "ur4ltz/surround.nvim"
   use 'kyazdani42/nvim-web-devicons'
