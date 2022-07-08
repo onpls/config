@@ -100,9 +100,9 @@ keymap("v", "m", "f", opts)
 keymap("x", "m", "f", opts)
 
 -- %
-keymap("n", "x", "%", opts)
-keymap("v", "x", "%", opts)
-keymap("x", "x", "%", opts)
+keymap("n", "q", "%", opts)
+keymap("v", "q", "%", opts)
+keymap("x", "q", "%", opts)
 
 -- search results
 keymap("n", "<Tab>",   "n", opts)
@@ -245,8 +245,8 @@ keymap("n", "<C-z>", "<cmd>vsplit<cr>", opts)
 keymap("n", "<C-v>", "<cmd>hsplit<cr>", opts)
 keymap("n", "<C-g>", "<cmd>terminal<cr>", opts)
 keymap("n", "<C-t>", "<cmd>ToggleTerm direction=float<cr>", opts)
-keymap("n", "X",     "<cmd>Bdelete!<CR>", opts)
-keymap("n", "Q",     "<cmd>q!<CR>", opts)
+keymap("n", "Q",     "<cmd>Bdelete!<CR>", opts)
+keymap("n", "X",     "<cmd>q!<CR>", opts)
 
 keymap("n", "wi", "<cmd>set foldmethod=indent<CR>", opts)
 keymap("n", "wm", "<cmd>set foldmethod=manual<CR>", opts)

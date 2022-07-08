@@ -11,7 +11,6 @@ local palette = {
 
   fg              = '#D4D4D4',
   bg              = '#1E1E1E',
-  -- dark            = '#252525',
   popup_back      = '#2D2D30',
   dark_grey       = '#3e3e3e',
   cursor_fg       = '#515052',
@@ -136,7 +135,7 @@ function palette.load_syntax()
     Character           = {fg = palette.green},
     Comment             = {fg = palette.gray, style = 'italic'},
     Conditional         = {fg = palette.purple},
-    Constant            = {fg = palette.orange},
+    Constant            = {fg = palette.blue},
     Define              = {fg = palette.purple},
     Delimiter           = {fg = palette.fg},
     Error               = {fg = palette.error_red, bg = palette.bg, style = 'bold'},
@@ -182,7 +181,7 @@ function palette.load_plugins()
     TSConditional         = {fg = palette.blue},
     TSConstBuiltin        = {fg = palette.blue},
     TSConstMacro          = {fg = palette.cyan},
-    TSConstant            = {fg = palette.yellow},
+    TSConstant            = {fg = palette.blue},
     TSConstructor         = {fg = palette.cyan},
     TSEmphasis            = {style = 'italic'},
     TSError               = {fg = palette.error_red},
@@ -240,10 +239,10 @@ function palette.load_plugins()
     GitSignsDeleteNr                = {fg = palette.red},
 
     -- telescope
-    TelescopeBorder                 = {fg = palette.grey4},
-    TelescopePromptBorder           = {fg = palette.grey4},
-    TelescopeResultsBorder          = {fg = palette.grey4},
-    TelescopePreviewBorder          = {fg = palette.grey4},
+    TelescopeBorder                 = {fg = palette.blue},
+    TelescopePromptBorder           = {fg = palette.blue},
+    TelescopeResultsBorder          = {fg = palette.blue},
+    TelescopePreviewBorder          = {fg = palette.blue},
     TelescopePromptPrefix           = {fg = palette.grey4},
     TelescopeSelectionCaret         = {fg = palette.grey4},
 
