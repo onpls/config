@@ -16,4 +16,26 @@ configs.setup {
     additional_vim_regex_highlighting = true,
   },
   indent = { enable = true, disable = { "yaml" } },
+  rainbow = {
+    enable = true,
+    extended_mode = true,
+    colors = {
+        "#458588",
+        "#b16286",
+        "#689d6a",
+        "#d79921",
+        "#d65d0e",
+        "#a89984",
+        "#569CD6",
+    },
+    termcolors = {
+        "Red",
+        "Green",
+        "Yellow",
+        "Blue",
+        "Magenta",
+        "Cyan",
+        "White",
+    }
+  },
 }

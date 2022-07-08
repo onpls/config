@@ -246,7 +246,7 @@ keymap("n", "<C-v>", "<cmd>hsplit<cr>", opts)
 keymap("n", "<C-g>", "<cmd>terminal<cr>", opts)
 keymap("n", "<C-t>", "<cmd>ToggleTerm direction=float<cr>", opts)
 keymap("n", "Q",     "<cmd>Bdelete!<CR>", opts)
-keymap("n", "X",     "<cmd>q!<CR>", opts)
+keymap("n", "<C-Q>", "<cmd>q!<CR>", opts)
 
 keymap("n", "wi", "<cmd>set foldmethod=indent<CR>", opts)
 keymap("n", "wm", "<cmd>set foldmethod=manual<CR>", opts)
