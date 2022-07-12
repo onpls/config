@@ -22,11 +22,10 @@ configs.setup {
     colors = {
         "#458588",
         "#b16286",
-        "#689d6a",
-        "#d79921",
-        "#d65d0e",
-        "#a89984",
-        "#569CD6",
+        "#98784D",
+        "#458588",
+        "#b16286",
+        "#98784D",
     },
     termcolors = {
         "Red",
@@ -35,7 +34,6 @@ configs.setup {
         "Blue",
         "Magenta",
         "Cyan",
-        "White",
     }
   },
 }

@@ -57,6 +57,7 @@ return packer.startup(function(use)
 
   -- Colors
   use "norcalli/nvim-colorizer.lua"
+  use 'kabbamine/vcoolor.vim'
 
   -- Cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin

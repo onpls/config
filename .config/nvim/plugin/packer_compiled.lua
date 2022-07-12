@@ -204,6 +204,11 @@ _G.packer_plugins = {
     path = "/home/opls/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
     url = "https://github.com/akinsho/toggleterm.nvim"
   },
+  ["vcoolor.vim"] = {
+    loaded = true,
+    path = "/home/opls/.local/share/nvim/site/pack/packer/start/vcoolor.vim",
+    url = "https://github.com/kabbamine/vcoolor.vim"
+  },
   ["vim-bbye"] = {
     loaded = true,
     path = "/home/opls/.local/share/nvim/site/pack/packer/start/vim-bbye",
