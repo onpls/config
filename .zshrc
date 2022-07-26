@@ -142,7 +142,6 @@ alias g='git'
 alias n='nvim'
 
 ## Reas ai-platform 
-alias ps='python research/scripts.py'
 alias py='python'
 alias pyprofile='python -m cProfile -o profile'
 alias gacp='ga .; gcsm "actualization"; gp'

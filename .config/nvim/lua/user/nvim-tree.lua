@@ -71,7 +71,7 @@ nvim_tree.setup {
         { key = "I",                              action = "toggle_git_ignored" },
         { key = "H",                              action = "toggle_dotfiles" },
         { key = "U",                              action = "toggle_custom" },
-        { key = "R",                              action = "refresh" },
+        { key = "<C-r>",                          action = "refresh" },
         { key = "a",                              action = "create" },
         { key = "d",                              action = "remove" },
         { key = "<C-D>",                          action = "trash" },

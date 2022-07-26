@@ -176,17 +176,26 @@ keymap("v", "y",  '"_c',  opts)
 keymap("x", "y",  '"_c',  opts)
 keymap("n", "yy", '"_cc', opts)
 
+keymap("n", "yu", '"_ct_', opts)
+keymap("n", "yo", '"_ct-', opts)
+
 -- delete
 keymap("n", "b",  "d",  opts)
 keymap("v", "b",  "d",  opts)
 keymap("x", "b",  "d",  opts)
 keymap("n", "bb", "dd", opts)
 
+keymap("n", "bu", 'dt_', opts)
+keymap("n", "bo", 'dt-', opts)
+
 -- yank
 keymap("n", "k",  "y",  opts)
 keymap("v", "k",  "y",  opts)
 keymap("x", "k",  "y",  opts)
 keymap("n", "kk", "yy", opts)
+
+keymap("n", "ku", 'yt_', opts)
+keymap("n", "ko", 'yt-', opts)
 
 -- paste
 keymap("v", "p", '"_dP', opts)
@@ -208,6 +217,12 @@ keymap("n", "<C-Up>", ":resize +2<CR>", opts)
 keymap("n", "<C-Down>", ":resize -2<CR>", opts)
 keymap("n", "<C-Left>", ":vertical resize +2<CR>", opts)
 keymap("n", "<C-Right>", ":vertical resize -2<CR>", opts)
+
+-- macro
+keymap("n", "x", "q", opts)
+keymap("n", "X", "@", opts)
+keymap("n", "xx", "@@", opts)
+
 
 ---------------------------
 ------- MODE SWITCH -------
@@ -232,6 +247,12 @@ keymap("n", "A", "I", opts)
 keymap("n", "u", "a", opts)
 keymap("n", "U", "A", opts)
 
+---------------------------
+------- INSERT MODE -------
+---------------------------
+
+keymap("i", '<C-n>', "<C-t>", opts)
+
 --------------------------------------------
 ----------------- Plugins  -----------------
 --------------------------------------------
@@ -242,7 +263,7 @@ keymap("n", "gn", "*<cmd>nohlsearch<CR>", opts)
 keymap("n", "<C-r>", "<cmd>lua vim.lsp.buf.rename()<CR>", opts)
 
 keymap("n", "<C-z>", "<cmd>vsplit<cr>", opts)
-keymap("n", "<C-v>", "<cmd>hsplit<cr>", opts)
+keymap("n", "<C-v>", "<cmd>split<cr>", opts)
 keymap("n", "<C-g>", "<cmd>terminal<cr>", opts)
 keymap("n", "<C-t>", "<cmd>ToggleTerm direction=float<cr>", opts)
 keymap("n", "Q",     "<cmd>Bdelete!<CR>", opts)
