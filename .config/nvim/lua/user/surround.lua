@@ -1,6 +1,6 @@
 local surround = require("surround")
 
-surround.setup( 
+surround.setup(
   {
     context_offset = 100,
     load_autogroups = false,
