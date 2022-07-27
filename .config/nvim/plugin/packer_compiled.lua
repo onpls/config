@@ -114,6 +114,11 @@ _G.packer_plugins = {
     path = "/home/opls/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
+  ["darkplus.nvim"] = {
+    loaded = true,
+    path = "/home/opls/.local/share/nvim/site/pack/packer/start/darkplus.nvim",
+    url = "https://github.com/LunarVim/darkplus.nvim"
+  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/home/opls/.local/share/nvim/site/pack/packer/start/friendly-snippets",
@@ -143,11 +148,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/opls/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua",
     url = "https://github.com/norcalli/nvim-colorizer.lua"
-  },
-  ["nvim-cursorline"] = {
-    loaded = true,
-    path = "/home/opls/.local/share/nvim/site/pack/packer/start/nvim-cursorline",
-    url = "https://github.com/yamatsum/nvim-cursorline"
   },
   ["nvim-lsp-installer"] = {
     loaded = true,

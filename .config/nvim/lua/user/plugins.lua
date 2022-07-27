@@ -58,6 +58,7 @@ return packer.startup(function(use)
   -- Colors
   use "norcalli/nvim-colorizer.lua"
   use 'kabbamine/vcoolor.vim'
+  use "LunarVim/darkplus.nvim"
 
   -- Cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
@@ -66,7 +67,6 @@ return packer.startup(function(use)
   use "hrsh7th/cmp-cmdline" -- cmdline completions
   use "saadparwaiz1/cmp_luasnip" -- snippet completions
   use "hrsh7th/cmp-nvim-lsp"
-  use "yamatsum/nvim-cursorline"
 
   -- snippets
   use "L3MON4D3/LuaSnip" --snippet engine

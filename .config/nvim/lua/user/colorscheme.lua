@@ -271,6 +271,12 @@ function palette.load_plugins()
     LspDiagnosticsUnderlineInformation  = {style="undercurl",sp=palette.blue};
     LspDiagnosticsUnderlineHint         = {style="undercurl",sp=palette.purple};
 
+		LspReferenceRead = {bg = "#36383F", },
+		LspReferenceText = {bg = "#36383F", },
+		LspReferenceWrite = {bg = "#36383f", },
+		-- LspCodeLens = {fg = C.context, style = "italic", },
+		-- LspCodeLensSeparator = {fg = C.context, style = "italic", },
+
     -- markdown
     markdownBlockquote            = {fg = palette.grey},
     markdownBold                  = {fg = palette.none, bold = true},
