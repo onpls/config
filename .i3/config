@@ -8,8 +8,9 @@ set $mod Mod4
 # workspace_layout tabbed <stacking|tabbed>
 
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
-default_border pixel 1
+default_border pixel  1
 default_floating_border normal
+new_window pixel  1
 
 # Hide borders
 hide_edge_borders none
@@ -243,7 +244,7 @@ mode "$mode_system" {
     # exit system mode: "Enter" or "Escape"
     bindsym Return mode "default"
     bindsym Escape mode "default"
-}
+ }
 
 # Resize window (you can also use the mouse for that)
 bindsym $mod+r mode "resize"
@@ -328,7 +329,7 @@ bar {
 	bindsym button4 nop
 	bindsym button5 nop
 #   font xft:URWGothic-Book 11
-	strip_workspace_numbers yes
+ strip_workspace_numbers yes
 
     colors {
         background #202020
@@ -336,33 +337,33 @@ bar {
         separator  #454947
 
 #                      border  backgr. text
-        focused_workspace  #F9FAF9 #16a085 #292F34
+        focused_workspace  #F9FAF9 #16a085 #202020 
         active_workspace   #595B5B #353836 #FDF6E3
         inactive_workspace #595B5B #202020 #EEE8D5
         binding_mode       #16a085 #2C2C2C #F9FAF9
         urgent_workspace   #16a085 #FDF6E3 #E5201D
     }
-}
+  }
 
 # hide/unhide i3status bar
 bindsym $mod+m bar mode toggle
 
 # Theme colors
-# class                   border  backgr. text    indic.   child_border
-  client.focused          #252525 #252525 #80FFF9 #FDF6E3
-  client.focused_inactive #1E1E1E #1E1E1E #1ABC9C #454948
-  client.unfocused        #1E1E1E #1E1E1E #1ABC9C #454948
-  client.urgent           #CB4B16 #FDF6E3 #1ABC9C #268BD2
-  client.placeholder      #000000 #0c0c0c #ffffff #000000 
+# class                 border  backgr. text    indic.  child_border
+client.focused          #252525 #252525 #80FFF9 #FDF6E3 #13856F
+client.focused_inactive #1E1E1E #1E1E1E #1ABC9C #454948 #202020
+client.unfocused        #1E1E1E #1E1E1E #1ABC9C #454948 #202020
+client.urgent           #CB4B16 #FDF6E3 #1ABC9C #268BD2
+client.placeholder      #000000 #0c0c0c #ffffff #000000 
 
-  client.background       #2B2C2B
+client.background       #2B2C2B
 
 #############################
 ### settings for i3-gaps: ###
 #############################
 
 # Set inner/outer gaps
-gaps inner 3
+gaps inner 0
 gaps outer 0
 
 # Additionally, you can issue commands with the following syntax. This is useful to bind keys to changing the gap size.
@@ -388,7 +389,7 @@ mode "$mode_gaps" {
         bindsym i      mode "$mode_gaps_inner"
         bindsym Return mode "default"
         bindsym Escape mode "default"
-}
+        }
 mode "$mode_gaps_inner" {
         bindsym plus  gaps inner current plus 5
         bindsym minus gaps inner current minus 5
@@ -400,7 +401,7 @@ mode "$mode_gaps_inner" {
 
         bindsym Return mode "default"
         bindsym Escape mode "default"
-}
+        }
 mode "$mode_gaps_outer" {
         bindsym plus  gaps outer current plus 5
         bindsym minus gaps outer current minus 5
@@ -412,7 +413,7 @@ mode "$mode_gaps_outer" {
 
         bindsym Return mode "default"
         bindsym Escape mode "default"
-}
+        }
 
 exec --no-startup-id flameshot
 exec --no-startup-id "xrandr --output eDP-1 --off --output HDMI-1 --mode 1920x1080 --pos 0x0 --rotate normal --output DP-1 --off --output DP-2 --off" 
