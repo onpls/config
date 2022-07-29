@@ -140,10 +140,11 @@ alias free='free -m'                                            # Show sizes in 
 alias gitu='git add . && git commit && git push'
 alias g='git'
 alias n='nvim'
+alias cc='cz c'
 
 ## Reas ai-platform 
 alias py='python'
 alias pyprofile='python -m cProfile -o profile'
-alias gacp='ga .; gcsm "actualization"; gp'
+alias gacp='ga .; gcsm "update"; gp'
 export PYTHONPATH='/home/opls/reas-python-services'
 eval "$(pyenv init -)"

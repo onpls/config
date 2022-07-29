@@ -55,10 +55,11 @@ return packer.startup(function(use)
   use 'kyazdani42/nvim-web-devicons'
   use 'kyazdani42/nvim-tree.lua'
 
+  use 'lewis6991/impatient.nvim'
+
   -- Colors
   use "norcalli/nvim-colorizer.lua"
   use 'kabbamine/vcoolor.vim'
-  use "LunarVim/darkplus.nvim"
 
   -- Cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
@@ -68,7 +69,7 @@ return packer.startup(function(use)
   use "saadparwaiz1/cmp_luasnip" -- snippet completions
   use "hrsh7th/cmp-nvim-lsp"
 
-  -- snippets
+  -- Snippets
   use "L3MON4D3/LuaSnip" --snippet engine
   use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
 
